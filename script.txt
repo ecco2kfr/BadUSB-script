@@ -1,0 +1,29 @@
+#include "DigiKeyboardFr.h"
+
+void setup() {
+  DigiKeyboard.sendKeyStroke(0); 
+  DigiKeyboard.delay(1000);
+  
+  
+  DigiKeyboard.sendKeyStroke(KEY_F, MOD_GUI_LEFT); 
+  DigiKeyboard.delay(2000); 
+  DigiKeyboardFr.println("https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new");
+  DigiKeyboard.delay(6000);
+  DigiKeyboardFr.print("ENTER YOUR EMAIL HERE");
+  DigiKeyboard.delay(100);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(100);
+  DigiKeyboardFr.print("Mail");
+  DigiKeyboard.delay(100);
+  DigiKeyboard.sendKeyStroke(43);
+  DigiKeyboard.delay(100);
+  DigiKeyboard.print("Contenu");
+  DigiKeyboard.delay(100);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER, MOD_CONTROL_LEFT); 
+  DigiKeyboard.sendKeyStroke(KEY_T, MOD_CONTROL_LEFT);
+  DigiKeyboardFr.println("INSERT YOUR LINK HERE");
+}
+
+void loop() {
+}
